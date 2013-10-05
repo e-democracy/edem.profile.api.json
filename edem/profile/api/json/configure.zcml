@@ -2,4 +2,8 @@
 <configure xmlns="http://namespaces.zope.org/zope"
            xmlns:browser="http://namespaces.zope.org/browser">
 
+    <browser:page name="api.json"
+      for="Products.CustomUserFolder.interfaces.ICustomUser"
+      class=".api.GroupApi"
+      permission="zope2.Public"/>
 </configure>
